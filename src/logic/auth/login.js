@@ -16,6 +16,6 @@ export const loginUser = async ({ email, password }) => {
 
     return logged(user, token)
   } catch (err) {
-    return internalServerError({ method: `loginUser()`, err })
+    return internalServerError('loginUser()', err)
   }
 }

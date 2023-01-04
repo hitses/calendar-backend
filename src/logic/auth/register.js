@@ -20,6 +20,6 @@ export const createUser = async user => {
 
     return userRegistered(name, email, newUser._id)
   } catch (err) {
-    return internalServerError({ method: `createUser()`, err })
+    return internalServerError(`createUser()`, err)
   }
 }
